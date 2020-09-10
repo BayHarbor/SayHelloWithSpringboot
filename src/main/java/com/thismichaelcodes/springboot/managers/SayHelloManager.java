@@ -5,9 +5,9 @@ import java.util.Calendar;
 
 @Component
 public class SayHelloManager {
+    public Calendar cal = Calendar.getInstance();
 
     public String generateGreeting(String name) {
-        Calendar cal = Calendar.getInstance();
         int hour = cal.get(Calendar.HOUR_OF_DAY);
         String greeting = "Good Morning ";
 
