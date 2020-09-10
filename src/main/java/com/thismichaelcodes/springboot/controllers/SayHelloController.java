@@ -11,7 +11,7 @@ public class SayHelloController {
     @Autowired
     SayHelloManager sayHelloManager;
 
-    @RequestMapping("/{name}")
+    @RequestMapping("/v1/{name}")
     public String sayHello(@PathVariable("name") String name) {
         return sayHelloManager.generateGreeting(name);
     }

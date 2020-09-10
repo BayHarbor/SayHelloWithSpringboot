@@ -40,7 +40,7 @@ public class SayHelloControllerTest {
         String name = "Tester";
         when(sayHelloManager.generateGreeting(any())).thenReturn("Good Morning " + name.toUpperCase() + "!");
 
-        mvc.perform(MockMvcRequestBuilders.get("/" + name).accept(MediaType.APPLICATION_JSON))
+        mvc.perform(MockMvcRequestBuilders.get("/v1/" + name).accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Good Morning TESTER!")));
     }
