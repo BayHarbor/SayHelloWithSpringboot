@@ -22,5 +22,6 @@ public class SayHello {
         return new Docket(DocumentationType.SWAGGER_2).select()
                 .apis(RequestHandlerSelectors.basePackage("com.thismichaelcodes.springboot")).build();
     }
-
+// Swgger How To:
+// https://www.tutorialspoint.com/spring_boot/spring_boot_enabling_swagger2.htm
 }
